@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link href="siteStyle.css" rel="stylesheet" type="text/css">
+ 
+        <title>HOME PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script>
+
+    
+    function checkPatternChars(nm,vlu,required){
+             if ( required === undefined ) {
+                required = false;
+                } 
+               if(vlu=="")
+            {
+                alert("Campo Vuoto: "+nm);
+                return;
+            }
+
+            else  
+                return true; 
+                
+            }
+        
+    
+        function myFunction(modulo) {
+   
+
+            if(!checkPatternChars('Nome',modulo.NomeAutore.value))
+                 
+                    modulo.NomeAutore.focus();    
+             else if(modulo.TitoloTesto.value=="")
+             {
+                    alert("Inserire Testo di Ricerca")
+                    modulo.TitoloTesto.focus(); 
+              }
+             else
+              {
+                document.modulo.action = "DocumentiUtente.jsp";// aggiungo attributi alla form 
+                document.modulo.submit();// è come se avessi premuto CLICCA su un pulsante per far partire la Form
+               }
+        }
+
+     </script>
+    </head>
+    <body>
+
+              <a href="Login.html">
+                   <button id="pulsante2">Login</button>
+               </a>
+             
+                <h1> BENVENUTO </h1>
+
+         <br>
+         <br>
+         <br>
+              
+         <p> Ricerca di documenti pubblici </p>
+         <br>
+         <br>
+        <a href="Autore.jsp">
+             <button name="pulsante">Ricerca Per Autore</button>  
+        </a><br>
+        <a href="Titolo.jsp">
+            <button name="pulsante">Ricerca Per Titolo</button>  
+        </a>
+    </body>
+        
+        
+</html>
+

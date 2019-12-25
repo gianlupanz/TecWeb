@@ -1,0 +1,119 @@
+
+h1{
+
+    margin-left: 620px;
+    margin-right: 600px;
+    font: 30px Helvetica, sans-serif;
+    color:whitesmoke;
+
+}
+
+p{
+    border: 2px solid #00ccff;
+    background: #0099ff;
+    padding: 10px 40px;
+    width: 280px;
+    color: whitesmoke;
+    margin-left: 540px;
+    margin-right: 500px;
+    border-radius: 25px;
+    cursor:not-allowed;
+}
+
+.input
+{
+ cursor: pointer;
+ font: bold 11px Lucida Console, sans-serif;
+ color:whitesmoke; 
+ padding: 5px 6px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px; 
+ 
+}
+
+.input:hover{
+   
+    background: background; 
+    
+}
+
+
+body {
+    background-color:#ffffff;
+    background-image: url(blue.jpg);
+    font:  20px Lucida Console, sans-serif;
+}
+
+
+button[name=pulsante] {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font:  15px  sans-serif;
+ color: whitesmoke;
+ padding: 10px 20px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px;
+ margin-left: 630px;
+ 
+}
+button[name=pulsante1] {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font:  15px  sans-serif;
+ color: whitesmoke;
+ padding: 10px 20px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px;
+
+ 
+}
+
+button[name=pulsante]:hover{
+    
+    
+   background: background; 
+    
+    
+} 
+
+button[name=pulsante1]:hover{
+    
+    
+   background: background; 
+    
+    
+} 
+
+form{
+    
+   color: whitesmoke; 
+   text-align: center; 
+    font:  20px  sans-serif;
+}
+
+input{
+    outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font:  15px  sans-serif;
+ color: whitesmoke;
+ padding: 10px 20px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px;
+  
+    
+}
+
+input:hover{
+    
+   background: background;  
+}

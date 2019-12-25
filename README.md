@@ -1,4 +1,4 @@
-<b>TecWeb project</b>
+<b>TecWeb project realized with Angelo Borrelli</b>
 
 Development of a web application for the shared development of documents and their
 publication. A group of people work on developing a document, with a check

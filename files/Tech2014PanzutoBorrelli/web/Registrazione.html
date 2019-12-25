@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registrazione</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stileLogin.css" rel="stylesheet" type="text/css">
+      <script>
+         function checkPatternChars2(nm,vlu,pattern,required,pattern_titolo){
+             
+              if ( required === undefined ) {
+                required = false;
+                } 
+             if(vlu=="")
+                {
+                   alert("Campo Vuoto: "+nm);
+                    return;
+                }
+                
+             var result=vlu.search(pattern_titolo);
+             if (result==-1)
+             {  
+           
+                    if (!pattern.test(vlu))
+                        {
+                            alert("Il campo "+nm+" non e\' valido!");
+                            return false;
+                        }
+                    else { 
+                
+                        return true; 
+                 
+                        }
+             }
+             else{
+                   alert("Non puoi inserire caratteri accentati" );  
+                   return false;
+                
+                 } 
+                
+            }
+             function checkPatternChars(nm,vlu,pattern,required){
+             
+              if ( required === undefined ) {
+                required = false;
+                } 
+             if(vlu=="")
+                {
+                   alert("Campo Vuoto: "+nm);
+                    return;
+                }
+
+                    if (!pattern.test(vlu))
+                        {
+                            alert("Il campo "+nm+" non e\' valido!");
+                            return false;
+                        }
+                    else { 
+                
+                        return true; 
+                 
+                        }
+    
+            }
+            
+        
+    
+        function myFunction(modulo) {
+            var pattern_titolo=/[ìè+ùàò]/;
+            var pattern_UserName=/^([a-zA-Z0-9\.\_\-])+$/;
+            var pattern_Password=/^[a-zA-Z0-9\_\*\-\+\!\?\,\:\;\.\xE0\xE8\xE9\xF9\xF2\xEC\x27]{6,12}/;
+            var pattern_Nome=/^([a-zA-Z\xE0\xE8\xE9\xF9\xF2\xEC\x27]\s?)+$/;
+            
+            if(!checkPatternChars('Nome',modulo.Nome.value,pattern_Nome,true)) 
+            {
+                    modulo.Nome.focus();
+                    return;
+                    
+            }
+             if(!checkPatternChars('Cognome',modulo.Cognome.value,pattern_Nome,true))
+             {
+                    modulo.Cognome.focus(); 
+                    return;
+                    
+              }
+            if(!checkPatternChars2('Password',modulo.Password.value,pattern_Password,true,pattern_titolo))
+             {
+                    modulo.Password.focus();
+                    return;
+                   
+              }
+             if(!checkPatternChars2('Username',modulo.Username.value,pattern_UserName,true,pattern_titolo))
+             {
+                    modulo.Username.focus(); 
+                    return;
+                    
+              }
+             else
+              {
+                document.modulo.action = 'registrazione';// aggiungo attributi alla form 
+                document.modulo.submit();// è come se avessi premuto CLICCA su un pulsante per far partire la Form
+               }
+        }
+
+     </script>
+    </head>
+    <body>
+         <h1>Insert Your Data</h1>
+        
+         <form method="post" name="modulo">
+             <label>Nome</label><input type="text" name="Nome" class="input" >
+                <br>
+                <label>Cognome</label><input type="text" name="Cognome" class="input"  >
+                <br>
+                <label>Password(Min 6 Max 12)</label><input name="Password" type="text" class="input"  >
+                <br>
+                <label>Username</label><input type="text" name= "Username" class="input"   >
+                <br>
+                <input type="button" value="Register"  onClick="myFunction(modulo)">
+                <input type="reset" value="Reset">
+        
+            </form>
+          <br>
+        <a href="Login.html"> 
+         <button name="pulsante">Login</button> </a><br>
+        <a href="index.html"> 
+         <button name="pulsante">Home Page</button> </a>
+    </body>
+</html>
+
+
+

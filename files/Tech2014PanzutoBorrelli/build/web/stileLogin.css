@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-gen-2015, 12.03.08
+    Author     : iAngelo
+*/
+
+form label{
+ border: 2px solid #00ccff;
+ border-radius: 5px ;
+ background: #0099ff;
+  padding: 2px 4px;   
+ color:whitesmoke;
+     
+}
+
+form input{
+    color: blue ;
+    font: 13px Lucida Console ,sans-serif;
+    
+}
+
+body {
+    background-image: url(blue.jpg);
+    font:  20px Lucida Console, sans-serif;
+}
+a button{
+outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font:  15px  sans-serif;
+ color: whitesmoke;
+ padding: 10px 20px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px;
+ 
+}
+
+button:hover{
+    
+    
+   background: background;  
+    
+    
+}
+
+button[name=pulsante]:hover{
+    
+    
+   background: background; 
+    
+    
+} 
+
+button[name=pulsante] {
+ outline: none;
+ cursor: pointer;
+ text-align: center;
+ text-decoration: none;
+ font:  15px  sans-serif;
+ color: whitesmoke;
+ padding: 10px 20px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px;
+
+ 
+}
+
+h1{
+    margin-left: 560px;
+    margin-right: 600px;
+    font: 30px Helvetica, sans-serif;
+    color:whitesmoke;
+}
+
+.input
+{
+ cursor: pointer;
+ font: bold 11px Lucida Console, sans-serif;
+ color:whitesmoke; 
+ padding: 5px 6px;
+ background: #0099ff;
+ border: 2px solid #00ccff;
+ border-radius: 15px; 
+ 
+}
+
+
+
+a
+{
+   background: #0099ff;
+   color:whitesmoke;      
+}
+
+a:hover{
+    
+     background: background; 
+    
+}
+
